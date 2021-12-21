@@ -1,0 +1,30 @@
+<div class="project-cards d-flex">
+  <% data.products.each do |product| %>
+    <% if product.url %>
+      <% link_to product.url, class: 'external-link no-deco col-4 hover', target: '_blank' do %>
+        <div class="card-trip mb-2">
+          <% if product.image %>
+            <%= image_tag product.image , :project_image %>
+          <% else %>
+            <img src="https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/greece.jpg" />
+          <% end %>
+          <div class="card-trip-infos">
+            <div>
+              <h2><%= product.name %></h2>
+              <p><%= product.description %></p>
+            </div>
+            <div class="stack-icons">
+              <% product.tags.each do |tag| %>
+                <i class="<%= tag %>"></i>
+              <% end %>
+            </div>
+          </div>
+        </div>
+      <% end %>
+    <% else %>
+      <% link_to product.url, class: 'external-link offline', target: '_blank' do %>
+        offline
+      <% end %>
+    <% end %>
+  <% end %>
+</div>

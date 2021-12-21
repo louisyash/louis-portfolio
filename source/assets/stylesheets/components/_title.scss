@@ -1,0 +1,33 @@
+.section-title {
+    height: 5%;
+    width: 70%;
+    text-align: center;
+    color: black;
+    margin-left: 25vw;
+    margin-top:2em;
+    margin-bottom: 1em;
+    font-family: 'Libre Franklin', sans-serif;
+}
+
+.head-title {
+  height: 20%;
+  width: 100%;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  padding: 12px;
+  text-align: center;
+  border-radius: 4px;
+  color:black;
+}
+
+.wrapper{
+    background-size: cover;
+    background-position: unset;
+    width: 100vw;
+    height: 100vh;
+    background-image: url(https://allhdwallpapers.com/wp-content/uploads/2015/06/San-Francisco-10.jpg);
+    background-attachment:fixed;
+    background-repeat: no-repeat;
+    background-color: #464646;
+    top: 0;
+    display:flex;
+}

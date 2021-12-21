@@ -1,8 +1,47 @@
-<div class="container mt-3">
-  <div class="row justify-content-center">
-    <div class="col">
-      <h1>Middleman Boilerplate</h1>
-      <p>Bootstrap and Font Awesome already installed.</p>
+<div class="relative-target">
+  <div class="wrapper">
+    <%# Sidebar %>
+    <div class="sidebar-container">
+      <div class="sidebar">
+        <h1>Louis Ryo Yasuhiro</h1>
+        <h5>Web Developer, Business Person, Musician, a friend.</h5>
+        <div class="link">
+          <li><a class="btn nav-button" href="#about"> About me </a></li>
+          <li><a class="btn nav-button" href="#projects"> My projects </a></li>
+          <li><a class="btn nav-button" target="_blank" href="https://github.com/louisyash"><i class="devicon-github-original"></i></a></li>
+          <li><a class="btn nav-button" target="_blank" href="https://www.linkedin.com/in/louis-yasuhiro/"><i class="devicon-linkedin-plain"></i></a></li>
+          <li><button class="btn nav-button" onclick="showForm()"> Contact </button></li>
+        </div>
+      </div>
+    </div>
+    <div class="w-100 row justify-content-center">
     </div>
   </div>
+  <%# contents here %>
+  <h3 id="about" class="section-title">About me</h3>
+  <%= partial "/layouts/partials/_about_me"  %>
+  <h3 id="projects" class="section-title">Web Development Projects</h3>
+  <%= partial "/layouts/partials/_projects"  %>
+  <%# contact form %>
+  <form id="contact" class="getform d-none" action="https://getform.io/f/0fe3b324-1bdb-4ba1-96d4-a9576c92a643" method="POST">
+    <div class="form-group mt-2">
+      <input type="text" name="name" class="form-control" placeholder="Name" required=true>
+    </div>
+    <div class="form-group">
+      <input type="email" name="email" class="form-control" placeholder="Email" required=true>
+    </div>
+    <div class="form-group">
+      <textarea type="text" name="message" class="form-control" placeholder="Message..." required=true></textarea>
+    </div>
+    <button type="submit" class="btn btn-info w-100">Send</button>
+  </form>
 </div>
+</div>
+<script>
+  function showForm() {
+    document.querySelector(".getform").classList.toggle("d-none");
+    document.getElementById("contact").scrollIntoView({
+      behavior: "smooth"
+    });
+  }
+</script>

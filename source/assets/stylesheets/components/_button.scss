@@ -1,0 +1,20 @@
+.contact-button {
+  width:50%;
+}
+
+.nav-button {
+  width:100%;
+}
+
+.nav-button:hover {
+    background-color: grey;
+    color:white;
+    opacity: 80%;
+}
+
+.contact-button {
+  width: auto;
+  margin: auto;
+  padding-left: 30px;
+  padding-right: 30px;
+}

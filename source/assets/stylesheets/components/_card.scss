@@ -1,0 +1,86 @@
+.card-trip {
+  overflow: hidden;
+  background: white;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  opacity:90%;
+     border-radius: 4px;
+}
+
+.card-trip > img {
+  height: 200px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.card-trip h2 {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.card-trip p {
+  font-size: 16px;
+  opacity: .7;
+  margin: 0;
+}
+
+
+.card-trip .card-trip-infos {
+  padding: 16px;
+  display: flex;
+  justify-content: space-between;
+  // align-items: flex-end;
+  position: relative;
+  height: 20vh;
+  flex-direction: column;
+  background-color: white;
+
+}
+
+.card-trip-infos .card-trip-user {
+  position: absolute;
+  right: 16px;
+  top: -20px;
+  width: 40px;
+  align-items: flex-end;
+   border-radius: 4px;
+}
+
+.no-deco {
+  text-decoration: none;
+  color:black;
+}
+
+.no-deco:hover {
+  text-decoration: none;
+}
+
+.intro-card {
+  height: 45vh;
+  width: 70%;
+  margin-left: 25vw;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: space-between;
+  left:30px;
+  color:black;
+  padding: 12px;
+}
+
+.card-trip:hover {
+  opacity: 1 !important;
+}
+
+.project-cards {
+  height: 150vh;
+  width: 70%;
+  margin-left: 25vw;
+  display: flex;
+  justify-content: space-between;
+  color: black;
+}
+
+.relative-target {
+  position:relative;
+}

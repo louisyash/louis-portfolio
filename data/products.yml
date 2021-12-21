@@ -1,4 +1,31 @@
-- name: Some product
-  image: some_product.png
-- name: Other product
-  image: other_product.png
+- name: RaibuOn
+  description: Application to help musicians market performances and receive gratuity.
+  image:
+  url: https://www.raibuon.com
+  tags:
+    - devicon-rails-plain-wordmark
+    - devicon-ruby-plain-wordmark
+    - devicon-javascript-plain
+    - devicon-css3-plain
+    - devicon-postgresql-plain-wordmark
+    - devicon-heroku-original
+
+- name: Kids Marketplace
+  description: A marketplace application to help kids rent toys
+  image:
+  url: kids-marketplace.herokuapp.com
+  tags:
+    - devicon-rails-plain-wordmark
+    - devicon-ruby-plain-wordmark
+    - devicon-javascript-plain
+    - devicon-css3-plain
+    - devicon-postgresql-plain-wordmark
+    - devicon-heroku-original
+
+- name: Project 3
+  description: Coming soon
+  image:
+  url: www.google.com
+  tags:
+      - devicon-rails-plain-wordmark
+      - devicon-postgresql-plain-wordmark
